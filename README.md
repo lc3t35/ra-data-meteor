@@ -42,3 +42,9 @@ const App = () => (
 
 export default App;
 ```
+
+## TODO
+
+- [ ] write a Meteor testbed with tests with Users and Contacts collections
+- [ ] add missing update, updateMany
+- [ ] update TypeScript
