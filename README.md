@@ -9,8 +9,7 @@ Using **npm**:
 Using **yarn**:
 ```yarn add lc3t35/ra-data-meteor history```
 
-meteor add alanning:roles
-meteor add lai:collection-extensions
+```meteor add alanning:roles lai:collection-extensions```
 
 ## Usage
 
