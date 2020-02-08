@@ -1,0 +1,48 @@
+{
+    "name": "ra-data-mateor",
+    "version": "0.1.0",
+    "description": "Meteor data provider for react-admin",
+    "main": "lib/index.js",
+    "module": "esm/index.js",
+    "sideEffects": false,
+    "files": [
+        "LICENSE",
+        "*.md",
+        "lib",
+        "esm",
+        "src"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lc3t35/ra-data-meteor.git"
+    },
+    "keywords": [
+        "reactjs",
+        "react",
+        "react-admin",
+        "meteor",
+        "local"
+    ],
+    "author": "Laurent Roger",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/lc3t35/ra-data-meteor/issues"
+    },
+    "homepage": "https://github.com/lc3t35/ra-data-meteor#readme",
+    "scripts": {
+        "build": "yarn run build-cjs && yarn run build-esm",
+        "build-cjs": "rimraf ./lib && tsc",
+        "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
+        "watch": "rimraf ./lib && tsc --watch"
+    },
+    "dependencies": {
+        "underscore": "^1.9.2"
+    },
+    "devDependencies": {
+        "cross-env": "^5.2.0",
+        "rimraf": "^2.6.3"
+    },
+    "peerDependencies": {
+        "ra-core": "^3.0.0"
+    }
+}
